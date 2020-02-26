@@ -25,7 +25,6 @@ Then, add the library to your module build.gradle
 <br/>
 <br/>
 <h2>Usage</h2>
-<br/>
 You just call the class Gallery with request code for result,
 and the request code must be 105.
 int req_gallery = 105;
