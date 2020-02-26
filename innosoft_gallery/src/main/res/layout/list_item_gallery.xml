@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/item_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.maedi.soft.ino.gallery.view.CircleLayoutLinear
+                android:id="@+id/item_layout_choosed"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:orientation="vertical"
+                android:gravity="end"
+                android:layout_gravity="right"
+                app:circleDotColor="@color/em_white_54"
+                app:circleDotBorderColor="@color/white"
+                android:layout_marginTop="@dimen/d5"
+                android:layout_marginRight="@dimen/d5">
+
+                <TextView
+                    android:id="@+id/item_text_choosed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="13dp"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"/>
+
+            </com.maedi.soft.ino.gallery.view.CircleLayoutLinear>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

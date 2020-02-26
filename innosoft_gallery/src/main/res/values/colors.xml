@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gray">#bdbdbd</color>
+    <color name="smooth_gray">#607C868E</color>
+    <color name="white">#ffffff</color>
+    <color name="em_white_54">#89ffffff</color>
+    <color name="blue_ocean">#4394D0</color>
+    <color name="em_transparent">#00000000</color>
+    <color name="tab_off">#b2b2b2</color>
+    <color name="tab_on">#437e99</color>
+
+</resources>

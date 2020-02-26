@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleDotLayout">
+        <attr name="circleDotRoundRadius" format="integer"/>
+        <attr name="circleDotColor" format="color" />
+        <attr name="circleDotBorderColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTabs">
+        <attr name="countTab" format="integer"/>
+    </declare-styleable>
+
+</resources>
