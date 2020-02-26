@@ -18,10 +18,9 @@ Then, add the library to your module build.gradle
     implementation <span class="pl-s"><span class="pl-pds">'</span>com.github.maedilaziman:innosoft-service:1.0.0<span class="pl-pds">'</span></span>
 }</pre>
 <br/>
-<br/>
 <h2>Features</h2>
-<br/>
 - Taking image from gallery
+<br/>
 - Taking image straight from camera
 <br/>
 <br/>
