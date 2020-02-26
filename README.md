@@ -31,24 +31,4 @@ int req_gallery = 105;
 Intent intent = new Intent(f, Gallery.class);
 startActivityForResult(intent, req_gallery);
 <br/>
-and then onActivityResult you just call this
-switch (requestCode) {
-            case DataStatic.REQUEST_INTENT_GALLERY:
-                if (null != data)
-                {
-                    String successData = data.getStringExtra(DataStatic.successSubmitNewData);
-                    if(null != successData) {
-                        if (successData.equalsIgnoreCase("1")) {
-                            String submitData = data.getStringExtra("data");
-                            Map m = new Gson().fromJson(submitData, Map.class);
-                            for(Object o : m.keySet())
-                            {
-                                String val = (String) m.get(o);
-                                String[] arrVal = val.split("\\|");
-                                Timber.d(TAG+"IMAGE_IS - "+arrVal[0]);
-                            }
-                        }
-                    }
-                }
-                break;
-        }
+<p>and then onActivityResult you just call this<br />switch (requestCode) {<br />&nbsp; &nbsp; &nbsp; case DataStatic.REQUEST_INTENT_GALLERY:<br />&nbsp; &nbsp; &nbsp; if (null != data)<br />&nbsp; &nbsp; &nbsp; {<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;String successData =&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; data.getStringExtra(DataStatic.successSubmitNewData);<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if(null != successData) {<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (successData.equalsIgnoreCase("1")) {<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; String submitData = data.getStringExtra("data");<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Map m = new Gson().fromJson(submitData, Map.class);<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for(Object o : m.keySet())<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; String val = (String) m.get(o);<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; String[] arrVal = val.split("\\|");<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Timber.d(TAG+"IMAGE_IS - "+arrVal[0]);<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br />&nbsp; &nbsp; &nbsp; }<br />&nbsp; &nbsp; &nbsp; break;<br /> }</p>
