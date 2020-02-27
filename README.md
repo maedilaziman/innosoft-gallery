@@ -19,10 +19,10 @@ Then, add the library to your module build.gradle
 }</pre>
 <br/>
 <h2>Features</h2>
-- Taking image from gallery
-<br/>
-- Taking image straight from camera
-<br/>
+<ul>
+<li>Taking image from gallery</li>
+<li>Taking image straight from camera</li>
+</ul>
 <br/>
 <h2>Usage</h2>
 You just call the class Gallery with request code for result,
