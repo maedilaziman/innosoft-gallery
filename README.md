@@ -1,5 +1,5 @@
 # About
-innosoft-gallery aims to help produce an easily usable implementation of taking image from gallery and camera.
+innosoft-gallery aims to help produce an easily usable implementation of taking image from gallery and camera.<br/>
 This library is similar to Instagram Gallery
 <br/>
 <br/>
