@@ -16,7 +16,7 @@ Then, add the library to your module build.gradle
 <br/>
 <br/>
 <pre><span class="pl-en">dependencies</span> {
-    implementation <span class="pl-s"><span class="pl-pds">'</span>com.github.maedilaziman:innosoft-service:1.0.0<span class="pl-pds">'</span></span>
+    implementation <span class="pl-s"><span class="pl-pds">'</span>com.github.maedilaziman:innosoft-gallery:1.0.0<span class="pl-pds">'</span></span>
 }</pre>
 <br/>
 <h2>Features</h2>
