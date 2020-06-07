@@ -27,6 +27,12 @@ Release 1.0.1
 <pre><span class="pl-en">dependencies</span> {
     implementation <span class="pl-s"><span class="pl-pds">'</span>com.github.maedilaziman:innosoft-gallery:1.0.1<span class="pl-pds">'</span></span>
 }</pre>
+Release 1.0.2
+</br>
+</br>
+<pre><span class="pl-en">dependencies</span> {
+    implementation <span class="pl-s"><span class="pl-pds">'</span>com.github.maedilaziman:innosoft-gallery:1.0.2<span class="pl-pds">'</span></span>
+}</pre>
 <h2>Features</h2>
 <ul>
 <li>Taking image from gallery</li>
@@ -34,6 +40,9 @@ Release 1.0.1
 </ul>
 <h2>Features release 1.0.1</h2>
 Change gallery design
+<br/>
+<h2>Features release 1.0.2</h2>
+Update gallery design
 <br/>
 <h2>Usage</h2>
 You just call the class Gallery with request code for result,
