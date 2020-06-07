@@ -15,8 +15,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.gson.Gson;
 import com.maedi.soft.ino.base.BuildActivity;
 import com.maedi.soft.ino.base.func_interface.ActivityListener;
@@ -106,8 +104,8 @@ public class MainActivity extends BuildActivity<View> implements ActivityListene
     }
 
     @Override
-    public void onActivityKeyDown(int keyCode, KeyEvent event) {
-
+    public boolean onActivityKeyDown(int keyCode, KeyEvent event) {
+        return false;
     }
 
     @Override
@@ -164,6 +162,11 @@ public class MainActivity extends BuildActivity<View> implements ActivityListene
                 }
                 break;
         }
+    }
+
+    @Override
+    public boolean onActivitySecure() {
+        return false;
     }
 
     @Override

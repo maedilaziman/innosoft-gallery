@@ -122,8 +122,8 @@ public class Gallery extends BuildActivity<View> implements ActivityListener<Int
     }
 
     @Override
-    public void onActivityKeyDown(int keyCode, KeyEvent event) {
-
+    public boolean onActivityKeyDown(int keyCode, KeyEvent event) {
+        return false;
     }
 
     @Override
@@ -155,6 +155,11 @@ public class Gallery extends BuildActivity<View> implements ActivityListener<Int
     @Override
     public void onActivityMResult(int requestCode, int resultCode, Intent data) {
 
+    }
+
+    @Override
+    public boolean onActivitySecure() {
+        return false;
     }
 
     @Override

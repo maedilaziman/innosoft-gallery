@@ -171,7 +171,7 @@ public class Cameras extends BaseFragment implements MainAdapter.CommMainAdapter
         btnCaptureImage.setOnClickListener(startCaptureListener);
         rotateCamera.setOnClickListener(rotateCameraListener);
         layoutPin.setOnClickListener(pinListener);
-        init();
+        //init();
     }
 
     @Override
@@ -461,6 +461,7 @@ public class Cameras extends BaseFragment implements MainAdapter.CommMainAdapter
 
     @Override
     public void setMUserVisibleHint(boolean isVisibleToUser) {
+        if(isVisibleToUser) init();
     }
 
     @Override
