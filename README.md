@@ -21,12 +21,20 @@ Then, add the library to your module build.gradle
 <pre><span class="pl-en">dependencies</span> {
     implementation <span class="pl-s"><span class="pl-pds">'</span>com.github.maedilaziman:innosoft-gallery:1.0.0<span class="pl-pds">'</span></span>
 }</pre>
+Release 1.0.1
+</br>
+</br>
+<pre><span class="pl-en">dependencies</span> {
+    implementation <span class="pl-s"><span class="pl-pds">'</span>com.github.maedilaziman:innosoft-gallery:1.0.1<span class="pl-pds">'</span></span>
+}</pre>
 <br/>
 <h2>Features</h2>
 <ul>
 <li>Taking image from gallery</li>
 <li>Taking image straight from camera</li>
 </ul>
+<h2>Features release 1.0.1</h2>
+Change gallery design
 <br/>
 <h2>Usage</h2>
 You just call the class Gallery with request code for result,
